@@ -1,76 +1,101 @@
-# MindCare: Intelligent Student Wellness Platform
+# 🧠 MindCare – Intelligent Student Wellness Platform
 
-MindCare is a comprehensive, AI-driven wellness and emergency-response web application designed for students. The platform leverages machine learning for predictive wellness routines, natural language processing for real-time conversational analysis, and integrated telecommunications mapping to support holistic tracking and urgent interventions.
 
-## 🚀 Features
-- **Conversational Chatbot**: Real-time distress-detecting chat interface leveraging the Google Generative AI (Gemini) API.
-- **Predictive Wellness Assessment**: Conducts multi-variate machine-learning inference via Scikit-Learn pipelines to curate custom, dynamically-generated wellbeing regimes.
-- **Automated Emergency Dispatch System**: Seamless telecommunication escalations orchestrated utilizing Twilio SDK capabilities for direct SMS and SMS automated alert generation.
-- **Microservices System Architecture**: Discrete scaling implemented mapping Node UI proxies interfacing to a Spring Boot backend and an isolated Python computation node. 
 
-## 🏗️ Technology Stack
+---
 
-**Frontend**
-- React & Vite 
-- TypeScript 
-- Tailwind CSS (Applying Glassmorphism Aesthetic Principles)
+# 📖 Overview
 
-**Backend 1 (Core Routing & APIs)**
-- Java 21 & Spring Boot
-- Twilio Telecommunication SDK
-- Firebase Admin User Management API
-- Google Generative AI REST Services
+**MindCare** is an intelligent student wellness platform developed using **Spring Boot** and **React**.  
+The application focuses on improving student wellbeing through AI-assisted conversations, wellness monitoring, and emergency communication systems.
 
-**Backend 2 (Machine Learning Service)**
-- Python & FastAPI 
-- Scikit-Learn & Pandas (Model Inference & DataFrame pipeline construction)
+The platform provides:
+- AI-powered conversational support
+- Wellness tracking and recommendations
+- Emergency SMS alert mechanisms
+- Secure and scalable backend APIs
+- Modern responsive UI with Glassmorphism design
 
-## 📁 System Architecture
-- `src/` - React Application containing UI component abstractions.
-- `backend-spring/` - Core Java App orchestrating the primary Chat/Emergency routing.
-- `backend/` - The Python computational unit evaluating predictive statistics on port `8000`.
+MindCare is built with a scalable architecture where **Spring Boot acts as the core backend system** handling API routing, chatbot communication, emergency workflows, and application services.
 
-## ⚙️ Prerequisites
-Ensure that your development environment includes:
-- **Node.js** v20+
-- **JDK** v21+
-- **Python** 3.9+ 
-- A valid `Twilio` Account & Verified Sender Number.
-- Google Gemini API Keys.
+---
 
-## 🔑 Environment Variables
-Create a `.env` file mapped at the root directories of both the **Frontend** and **Spring Boot Backend**:
-```env
-VITE_FIREBASE_API_KEY=xxxxx
-TWILIO_SID=xxxxx
-TWILIO_AUTH=xxxxx
-TWILIO_NUMBER=xxxxx
-GEMINI_API_KEY=xxxxx
-```
+# 🚀 Features
 
-## 🛠️ Running Locally
+## 🤖 AI Conversational Chatbot
+- Real-time student interaction system
+- Gemini AI powered conversations
+- Distress detection and supportive responses
+- Intelligent wellness assistance
 
-1. **Start the Frontend Web Application**:
-```bash
-npm install
-npm run dev
-# The React layer initiates on http://localhost:5173
-```
+## 🚨 Emergency Alert System
+- Automated SMS emergency notifications
+- Twilio API integration
+- Emergency escalation workflows
+- Fast communication support
 
-2. **Start the Core Spring Boot APIs**:
-```bash
-cd backend-spring
-./mvnw clean package spring-boot:run
-# Mounts the backend APIs onto http://localhost:8080 
-```
+## 📊 Wellness Monitoring
+- Personalized wellbeing tracking
+- Wellness recommendations
+- Dynamic assessment modules
+- Student-focused support mechanisms
 
-3. **Start the Machine Learning Service**:
-```bash
-cd backend
-pip install -r requirements.txt # (or fastApi, uvicorn, pandas, scikit-learn manually)
-python -m uvicorn main:app --reload --port 8000
-# Commences the survey predictor pipeline
-```
+## 🏗️ Scalable Spring Boot Architecture
+- RESTful API development
+- Layered backend architecture
+- Modular service implementation
+- Enterprise-level project structure
 
-## 📜 Notice
-This project prioritizes confidential wellness implementations. Please ensure `.env` file structures are strictly maintained out of open-source repository pushes.
+## 🎨 Modern User Interface
+- React + Vite frontend
+- TypeScript support
+- Tailwind CSS Glassmorphism UI
+- Responsive and accessible design
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+| Technology | Purpose |
+|---|---|
+| React | User Interface |
+| Vite | Frontend Build Tool |
+| TypeScript | Type Safety |
+| Tailwind CSS | UI Styling |
+| Axios | API Communication |
+
+---
+
+## Backend
+| Technology | Purpose |
+|---|---|
+| Spring Boot | Backend Framework |
+| Spring Web | REST APIs |
+| Spring Data JPA | Database Operations |
+| Maven | Dependency Management |
+| Twilio SDK | SMS Alerts |
+| Gemini API | AI Chat Support |
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                   ┌─────────────────────┐
+                   │    React Frontend   │
+                   │ (Vite + Tailwind)   │
+                   └──────────┬──────────┘
+                              │
+                              ▼
+                 ┌────────────────────────┐
+                 │   Spring Boot Backend  │
+                 │  APIs & Business Logic │
+                 └──────────┬─────────────┘
+                            │
+          ┌─────────────────┴─────────────────┐
+          ▼                                   ▼
+ ┌──────────────────┐               ┌──────────────────┐
+ │   Gemini AI API  │               │  Twilio Services │
+ │ Conversational AI│               │ Emergency Alerts │
+ └──────────────────┘               └──────────────────┘
