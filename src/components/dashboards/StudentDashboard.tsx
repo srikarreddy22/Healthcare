@@ -25,7 +25,7 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
 };
 import { listCounselors, createBooking, listenBookingsForStudent, getUserProfileById, type CounselorProfile, type Booking } from "@/services/bookings";
-import PopupChat from "@/components/PopupChat";
+import PopupChat from "@/components/common/PopupChat";
 import { testBookingFlow } from "@/lib/bookingTest";
 import { checkFirebaseConfig, getFirebaseConfigStatus } from "@/lib/firebaseConfigCheck";
 import {

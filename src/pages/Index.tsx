@@ -1,8 +1,8 @@
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { FeatureCards } from "@/components/FeatureCards";
-import { Testimonials } from "@/components/Testimonials";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/common/Header";
+import { Hero } from "@/components/common/Hero";
+import { FeatureCards } from "@/components/common/FeatureCards";
+import { Testimonials } from "@/components/common/Testimonials";
+import { Footer } from "@/components/common/Footer";
 
 const Index = () => {
   return (

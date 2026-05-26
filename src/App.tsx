@@ -7,10 +7,10 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import { RoleRouter } from "@/components/RoleRouter";
+import { RoleRouter } from "@/components/common/RoleRouter";
 import Tracker from "./pages/Tracker";
 import BrowseResources from "./pages/BrowseResources";
-import { InspirationalVerses } from "./components/insepri";
+import { InspirationalVerses } from "./components/common/insepri";
 import DoctorProfile from "./pages/DoctorProfile";
 import Profile from "./pages/Profile";
 
