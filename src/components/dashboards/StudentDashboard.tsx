@@ -26,8 +26,6 @@ const itemVariants = {
 };
 import { listCounselors, createBooking, listenBookingsForStudent, getUserProfileById, type CounselorProfile, type Booking } from "@/services/bookings";
 import PopupChat from "@/components/common/PopupChat";
-import { testBookingFlow } from "@/lib/bookingTest";
-import { checkFirebaseConfig, getFirebaseConfigStatus } from "@/lib/firebaseConfigCheck";
 import {
   Dialog,
   DialogContent,

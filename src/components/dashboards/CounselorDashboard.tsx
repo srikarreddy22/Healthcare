@@ -21,13 +21,11 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
 };
 import { acceptBooking, getUserProfileById, listenBookingsForCounselor, rejectBooking, completeSession, debugCounselorBookings, fixCounselorIdMismatch, createTestBooking, assignPendingBookingsToCounselor, getStudentMedicalReviews, type MedicalReview, type Booking } from "@/services/bookings";
-import { debugGlobalBookings } from "@/lib/debugBookings";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
-import { testFirebaseConnection } from "@/lib/firebaseTest";
 import { getAuthInstance } from "@/lib/firebase";
 
 export const CounselorDashboard = () => {
