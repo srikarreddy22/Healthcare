@@ -1,10 +1,10 @@
-package com.mindcare.backend;
+package com.codingshuttle.youtube.hospitalManagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackendSpringApplicationTests {
+class HospitalManagementApplicationTests {
 
 	@Test
 	void contextLoads() {
